@@ -1,25 +1,36 @@
-import logo from './logo.svg';
+
+import React from 'react';
+import { useEffect, useState } from 'react';
+import axios from 'axios'
 import './App.css';
+import Coin from './components/coin';
+import Header from './components/Header';
+import MainCoins from './pages/coinDetailsPage/MainCoins/MainCoins';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import  ReactDOM  from 'react-dom';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  // render() {
+    return (
+        <main>
+            <Header/>
+            <div className="container">
+                <Routes>
+                    <Route path="/" element={<MainCoins />}/>
+                    
+                </Routes>
+            </div>
+        </main>
+    )
 
-export default App;
+}
+const root = document.querySelector("#root")
+ReactDOM.render(
+<BrowserRouter>
+<App />
+</BrowserRouter>, 
+root)
+
+  export default App
