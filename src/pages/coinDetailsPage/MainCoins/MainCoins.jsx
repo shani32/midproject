@@ -10,7 +10,6 @@ function MainCoins() {
   const [isLoading, setIsLoading]=useState(false)
   
   useEffect(()=>{
-
     const getData = async () => {
       setIsLoading(true)
       const res = await axios
@@ -35,6 +34,7 @@ function MainCoins() {
           return(
             <div className='coin'>
             <Coin key={coin.id} 
+            id={coin.id}
             name={coin.name} 
             image={coin.image}
             symbol={coin.symbol}

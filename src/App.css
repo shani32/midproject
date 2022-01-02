@@ -4,4 +4,12 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+body{
+  padding: 2rem;
+}
+button{
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  width: 120px;
+  cursor: pointer;
+}
