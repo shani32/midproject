@@ -1,0 +1,23 @@
+
+body{
+    width: 100vw;
+    position: relative;
+}
+.navBarContainer{
+    display: flex;
+   justify-content: space-between;
+   background-color: black;
+   color: white;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 50px;
+   padding: 8px;
+   text-align: center;
+
+}
+.loginUser{
+    padding-right: 20px;
+}
+

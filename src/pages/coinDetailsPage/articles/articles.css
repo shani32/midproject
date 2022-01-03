@@ -1,0 +1,8 @@
+.cardContainer{
+    display: flex;
+}
+.card{
+border-radius: 10px;
+display: flex;
+border: black 5px solid;
+}

@@ -1,19 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import axios from 'axios'
-// import './App.css';
+import '../../../components/style.css';
 import Coin from '../../../components/coin';
+// import {WishListContext} from '../../../components/wishListContext'
 
 
 function MainCoins() {
   const [coins, setCoins]=useState([])
   const [inputSearch, setInputSearch]=useState('')
   const [isLoading, setIsLoading]=useState(false)
+  // const {wishList}= useContext(WishListContext)
+  // console.log(wishList)
   
   useEffect(()=>{
     const getData = async () => {
       setIsLoading(true)
       const res = await axios
-        .get("https://intense-mesa-62220.herokuapp.com/api.coingecko.com/api/v3/coins/markets?vs_currency=ILS&order=market_cap_desc&per_page=50&page=1&sparkline=false")
+        .get("https://intense-mesa-62220.herokuapp.com/api.coingecko.com/api/v3/coins/markets?vs_currency=USD&order=market_cap_desc&per_page=50&page=1&sparkline=false")
       setCoins(res.data)
       setIsLoading(false)
     }

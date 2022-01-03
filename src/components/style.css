@@ -1,7 +1,11 @@
+body{
+    background-color: rgb(94, 149, 212);
+}
 .coinContainer{
     display: flex;
     justify-content: center;
     margin:0 auto ;
+    color: black;
 }
 .coinRow{
     display: flex;
@@ -14,6 +18,8 @@
 }
 .coin{
     display: flex;
+    align-items: center;
+    justify-content: center;
     align-items: center;
     padding-right: 24px;
     min-width: 300px;
@@ -56,4 +62,15 @@
 .green{
     color: green;
 }
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    background-color: white;
+}
+a:active{
+    color: white;
+}
+
 
