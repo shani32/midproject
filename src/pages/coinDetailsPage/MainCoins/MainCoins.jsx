@@ -57,14 +57,14 @@ function MainCoins() {
     <div className="coinApp">
       < div className='coin-search'>
         <h1 className='coin-text'>
-        search for currency
+        Crypto Search 
         </h1>
         <form>
           <input type="text" className="coinInput"  onChange={ handlingChange}/> 
         </form>
       </div>
       <div>
-        {isLoading? <div>please wait</div>: showData()}
+        {isLoading? <div className='coinsData'>please wait</div>: showData()}
    </div>
     </div>
   );

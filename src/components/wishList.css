@@ -1,0 +1,15 @@
+.coinWishList{
+    width: 200px;
+    height: 400px;
+    /* display: flex; */
+   
+}
+.deleteButton{
+    width: 200px;
+    height: 50px;
+}
+.wishListContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

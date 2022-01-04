@@ -1,6 +1,7 @@
 .cardContainer {
 width: 230px;
-max-height: 500px;
+height: 550px;
+
 }
 
 .container{
@@ -11,8 +12,12 @@ max-height: 500px;
     margin-top: 50px;
    
 }
-.card{
+.ui{
 border-radius: 10px;
 display: flex;
-border: black 5px solid;
+border: rgb(27, 117, 190) 5px solid;
+}
+img{
+    width: 200px;
+    height: 50px;
 }

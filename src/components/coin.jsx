@@ -24,13 +24,13 @@ const Coin = ({ name, image, symbol, price, volume, priceChange,id }) => {
                 <p className="coinPrice">price:{price}$</p>
                 <p className="coinVolume">volume:{volume.toLocaleString()}$</p>
                 {priceChange < 0 ? (<p className="coinPercent red">{priceChange.toFixed(2)}%</p>) :
-                    (<p className="coinPercent green">{priceChange.toFixed(2)}%</p>)}
+                (<p className="coinPercent green">{priceChange.toFixed(2)}%</p>)}
                     
 
             </div>
         </div>
         </Link >
-        <button onClick={()=>addToWishList(wishObjGentrator(),user.uid,0)}>Add to wishList</button>
+        <button className="wishListAdd" onClick={()=>addToWishList(wishObjGentrator(),user.uid,0)}>Add to wishList</button>
     </div>
    
 )
