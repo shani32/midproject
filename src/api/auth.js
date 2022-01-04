@@ -1,12 +1,13 @@
 
 import { getAuth, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import app from "./fireBase";
+import { addNewUser } from "./crud";
 
 const provider = new GoogleAuthProvider();
 
 
 const auth = getAuth();
-export function googleSign(){
+export function googleSign(setUser){
 signInWithPopup(auth, provider)
   .then((result) => {
     // This gives you a Google Access Token. You can use it to access the Google API.
@@ -15,6 +16,9 @@ signInWithPopup(auth, provider)
     // The signed-in user info.
     const user = result.user;
     console.log(user)
+    addNewUser({uid:user.uid})
+    setUser(user)
+   
   }).catch((error) => {
     // Handle Errors here.
     const errorCode = error.code;
@@ -26,9 +30,10 @@ signInWithPopup(auth, provider)
     // ...
   });
 }
-  export function googleOut(){
+  export function googleOut(setUser){
       signOut(auth).then(() => {
     console.log('Sign-out successful')
+    setUser('user')
   }).catch((error) => {
     // An error happened.
   });

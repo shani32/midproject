@@ -1,10 +1,11 @@
 
 import { initializeApp } from "firebase/app";
-
+import {getDatabase} from 'firebase/database'
 
 const firebaseConfig = {
   apiKey: "AIzaSyDuVt7bvvpsKRZ1souRaQyi49G-4GMuI2Q",
   authDomain: "shanilogin22.firebaseapp.com",
+  databaseURL: "https://shanilogin22-default-rtdb.firebaseio.com",
   projectId: "shanilogin22",
   storageBucket: "shanilogin22.appspot.com",
   messagingSenderId: "967674026840",
@@ -13,5 +14,6 @@ const firebaseConfig = {
 
 
 const app = initializeApp(firebaseConfig);
-export default app
+const db=getDatabase(app)
+export default db
 

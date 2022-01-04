@@ -13,8 +13,10 @@ import LoginButton from './components/LoginButton';
 import LogoutButton from './components/LogOutButton';
 import {googleSign} from './api/auth'
 import Navbar from './components/Navbar';
-import { WishListContextProvider } from './components/wishListContext';
+import { UserContextProvider } from './components/UserContext';
 import ArticlesPage from './pages/coinDetailsPage/articles/articlesPage';
+import WishList from './components/wishList';
+
 function App() {
   const [user, setUser]=React.useState('')
   console.log(user)
@@ -22,22 +24,22 @@ function App() {
     return (
       <>
         <main>
-          <WishListContextProvider>
+          <UserContextProvider>
           <BrowserRouter>
             <Navbar/>
-            
-            <LogoutButton />
+            {/* <LoginButton/>
+            <LogoutButton /> */}
             <div className="container">  
             
                     <Route path="/" exact component={MainCoins}/>
                     <Route path="/coins/:id" exact component={CoinDetailsPage}/>
                     <Route path="/news" exact component={ArticlesPage}/>
-                    {/* <Route path="/login" exact component={LoginButton}/> */}
+                    <Route path="/wishList" exact component={WishList}/>
             
 
             </div>
           </BrowserRouter>  
-          </WishListContextProvider>
+          </UserContextProvider>
         </main>
         </>
     )

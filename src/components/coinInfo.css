@@ -1,0 +1,21 @@
+.bg-white{
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    margin-top: 10px;
+}
+.flex-column{
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 20px;
+    font-size: 18px;
+    /* text-align: left; */
+}
+
+.totalSupply, .volume, .high24, .Circulating-supply, .low24, .text-muted{
+    color: black;
+}

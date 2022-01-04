@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Chartjs from "chart.js/auto";
 import { ChartOptions } from "../components/ChartOptions";
+import './chart.css'
 
 
 const HistoryChart = ({ data }) => {
@@ -43,7 +44,7 @@ const HistoryChart = ({ data }) => {
               label: `${detail.name} price`,
               data: yData,
               backgroundColor: "rgba(174, 305, 194, 0.5)",
-              borderColor: "rgba(174, 305, 194, 0.4",
+              borderColor: "white",
               pointRadius: 0,
             },
           ],
@@ -59,7 +60,8 @@ const HistoryChart = ({ data }) => {
     if (detail) {
       return (
         <>
-          <p>${detail.current_price.toFixed(0)}</p>
+        <div className="chartHeader">
+          <p className="currentPrice">Current Price: ${detail.current_price.toFixed(0)}</p>
           <p
             // className={
             //   detail.price_change_24h < 0
@@ -67,8 +69,9 @@ const HistoryChart = ({ data }) => {
             //     // : "text-success my-0"
             // }
           >
-            {detail.price_change_percentage_24h.toFixed(2)}%
+           price change percentage 24h: {detail.price_change_percentage_24h.toFixed(2)}%
           </p>
+          </div>
         </>
       );
     }
@@ -77,7 +80,7 @@ const HistoryChart = ({ data }) => {
     <div>
       <div>{renderPrice()}</div>
       <div>
-        <canvas ref={chartRef} id="myChart" width={250} height={250}></canvas>
+        <canvas ref={chartRef} id="myChart" width={1200} height={300}></canvas>
       </div>
 
       <div>
@@ -92,8 +95,8 @@ const HistoryChart = ({ data }) => {
          
         >
           7d
-        </button>
-        <button
+        </button> */}
+        {/* <button
           onClick={() => setTimeFormat("1y")}
          
         >

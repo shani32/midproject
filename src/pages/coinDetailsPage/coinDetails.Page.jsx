@@ -1,39 +1,3 @@
-// import React, { useEffect, useState } from "react";
-// import { useParams } from "react-router-dom";
-// // import Coin from "../../components/coin";
-// import axios from "axios";
-// import HistoryChart from "../../components/chart";
-
-
-
-// const CoinDetailsPage=()=>{
-//     const [coin, setCoin] = useState({});
-//     const {id}= useParams()
-//     console.log(id);
-    
-
-
-//     useEffect(()=>{
-//         const getData = async () => {
-//           const res = await axios
-//             .get(`https://intense-mesa-62220.herokuapp.com/https://api.coingecko.com/api/v3/coins/${id}`)
-//             console.log(res)
-//             setCoin(res.data)
-//         }
-//            getData()
-//           },[])
-//           console.log(coin)
-
-  
-          
-//     return(
-//         <div>
-//           <HistoryChart/>
-//         </div>
-//     )
-// }
-// export default CoinDetailsPage
-
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import HistoryChart from "../../components/chart";

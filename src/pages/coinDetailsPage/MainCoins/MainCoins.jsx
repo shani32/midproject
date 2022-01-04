@@ -35,6 +35,8 @@ function MainCoins() {
       const showData=()=>{
         return filterOfCoins.map(coin=>{
           return(
+            <div className='mainPageContainer'>
+              <div className='background'></div>
             <div className='coin'>
             <Coin key={coin.id} 
             id={coin.id}
@@ -45,6 +47,7 @@ function MainCoins() {
             price={coin.current_price}
             priceChange={coin.price_change_percentage_24h}
             />
+            </div>
             </div>
           )
         })
