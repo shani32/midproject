@@ -80,7 +80,7 @@ const HistoryChart = ({ data }) => {
     <div>
       <div>{renderPrice()}</div>
       <div>
-        <canvas ref={chartRef} id="myChart" width={1200} height={300}></canvas>
+        <canvas ref={chartRef} id="myChart" width={1400} height={450}></canvas>
       </div>
 
       <div>
