@@ -27,8 +27,6 @@ function App() {
           <UserContextProvider>
           <BrowserRouter>
             <Navbar/>
-            {/* <LoginButton/>
-            <LogoutButton /> */}
             <div className="container">  
             
                     <Route path="/" exact component={MainCoins}/>

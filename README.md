@@ -18,22 +18,24 @@ wishList
 
 Router Structure
 
- UserContextProvider
-          BrowserRouter
-            Navbar
-             LoginButton
-            LogoutButton 
+   <>
+        <main>
+          <UserContextProvider>
+          <BrowserRouter>
+            <Navbar/>
+            <div className="container">  
             
-            
-                    Route path="/" exact component={MainCoins}
-                    Route path="/coins/:id" exact component={CoinDetailsPage}
-                    Route path="/news" exact component={ArticlesPage}
-                    Route path="/wishList" exact component={WishList}
+                    <Route path="/" exact component={MainCoins}/>
+                    <Route path="/coins/:id" exact component={CoinDetailsPage}/>
+                    <Route path="/news" exact component={ArticlesPage}/>
+                    <Route path="/wishList" exact component={WishList}/>
             
 
-           
-            BrowserRouter
-            UserContextProvider
+            </div>
+          </BrowserRouter>  
+          </UserContextProvider>
+        </main>
+        </>
 ## Available Scripts
 
 In the project directory, you can run:
