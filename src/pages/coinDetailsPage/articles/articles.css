@@ -1,6 +1,6 @@
 .cardContainer {
 width: 15rem;
-height: 29rem;
+height: 30rem;
 
 }
 
@@ -9,7 +9,7 @@ height: 29rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 3rem;
+    margin-top: 6rem;
    
 }
 .ui{
@@ -17,7 +17,8 @@ border-radius: 10px;
 display: flex;
 border: rgb(27, 117, 190) 5px solid;
 }
+
 img{
-    width: 13rem;
+    width: 15rem;
     height: 3rem;
 }

@@ -10,7 +10,7 @@ body{
     
 }
 .background{
-    height:93.5%;
+    height:94.5%;
     width: 150px;
     background-color: black;
     position: absolute;
@@ -43,12 +43,13 @@ body{
     justify-content: center;
     align-items: center;
     padding-right: 24px;
-    min-width: 300px;
+    min-width: 400px;
     color: black;
-    margin-left: 50px;
+    margin-left: 40px;
+    font-size: 20px;
 }
 .coin h1{
-    font-size: 16px;
+    font-size: 22px;
     width: 150px;
    
     
@@ -103,11 +104,11 @@ a:active{
 }
 .coin-search{
     text-align: left;
-    width: 200px;
+    width: 250px;
    
 }
 .coin-search input{
-    height: 30px;
+    height: 45px;
 }
 
 .wishListAdd{

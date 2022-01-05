@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import axios from 'axios'
 import '../../../components/style.css';
 import Coin from '../../../components/coin';
-// import {WishListContext} from '../../../components/wishListContext'
+
 
 
 function MainCoins() {
