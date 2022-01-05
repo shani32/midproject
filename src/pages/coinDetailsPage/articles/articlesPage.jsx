@@ -33,7 +33,7 @@ if (articles.length <= 0) {
       <div className="cardContainer" key={index}>
       <div className="ui card" >
         <div className="image">
-          <img src={news.image?news.image.thumbnail.contentUrl:imageUrl} alt="icon" />
+          <img className="bigImage" style={{ maxWidth: "300px", maxHeight: '300px' }} src={news.image?news.image.thumbnail.contentUrl:imageUrl} alt="icon" />
         </div>
         <div className="content">
           <a className="header"></a>
@@ -48,7 +48,7 @@ if (articles.length <= 0) {
         </div>
         <div className="extra content">
           <a href={news.url} target="_blank">
-            <img style={{ maxWidth: "20px" }} src={news.provider[0].image?news.provider[0].image.thumbnail.contentUrl:'Please Enter TO article'}  />
+            <img className="icon" style={{ maxWidth: "20px" }} src={news.provider[0].image?news.provider[0].image.thumbnail.contentUrl:'Please Enter TO article'}  />
           </a>
           {news.provider[0].name}
         </div>

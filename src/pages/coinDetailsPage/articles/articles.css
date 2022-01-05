@@ -1,6 +1,8 @@
 .cardContainer {
-width: 15rem;
-height: 30rem;
+width: 350px;
+height: 460px;
+margin: 30px;
+display: flex;
 
 }
 
@@ -9,16 +11,24 @@ height: 30rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 6rem;
+    margin-top: 5rem;
    
 }
 .ui{
 border-radius: 10px;
 display: flex;
 border: rgb(27, 117, 190) 5px solid;
+height: 500px;
 }
 
-img{
-    width: 15rem;
+/* img{
+    width: 12rem;
     height: 3rem;
+} */
+/* .icon{
+margin-bottom: 20px;
+} */
+ img .bigImage{
+    width: 320px;
+    height: 300px;
 }
