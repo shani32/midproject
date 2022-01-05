@@ -1,7 +1,39 @@
-# Getting Started with Create React App
+see live at nervous-babbage-e894ff.netlify.app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CryptoCoins
+ReactJS application with firebase, Gecko api and Rapid api. This app contain all crypto coins, with access to charts for each coin. components were build simple as possible. Only authorized users can access wishList coins page.
 
+Pages
+Browse
+
+HomePage- Main coins
+
+Signin
+
+coin details page
+
+article page
+
+wishList
+
+Router Structure
+
+ UserContextProvider
+          BrowserRouter
+            Navbar
+             LoginButton
+            LogoutButton 
+            
+            
+                    Route path="/" exact component={MainCoins}
+                    Route path="/coins/:id" exact component={CoinDetailsPage}
+                    Route path="/news" exact component={ArticlesPage}
+                    Route path="/wishList" exact component={WishList}
+            
+
+           
+            BrowserRouter
+            UserContextProvider
 ## Available Scripts
 
 In the project directory, you can run:
