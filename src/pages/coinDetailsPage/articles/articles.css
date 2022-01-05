@@ -1,6 +1,6 @@
 .cardContainer {
 width: 230px;
-height: 550px;
+height: 450px;
 
 }
 
@@ -8,7 +8,7 @@ height: 550px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 50px;
    
 }
