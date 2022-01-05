@@ -35,7 +35,7 @@ body{
     align-items: center;
     height: 90px;
     border-bottom: 1px solid black;
-    width: 900px;
+    width: 1000px;
 }
 .coin{
     display: flex;
