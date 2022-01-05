@@ -1,0 +1,64 @@
+@media only screen and (max-width: 768px){
+
+.background{
+    display: none;
+}
+.coinsImage{
+    display: none;
+}
+.coin-search{
+    left: 120px;
+    top:70px
+}
+.coinContainer{
+    display: block;
+    margin-left: 15px;
+}
+.coinWishList{
+    width: 120px;
+    height: 120px;
+}
+.coin{
+    font-size: 14px;
+    margin-left: 50px;
+}
+.coin h1{
+    font-size: 18px;
+}
+.coinRow{
+    display: block;
+    width:500px
+}
+.body{
+    padding: 13rem;
+}
+.navBarContainer{
+    margin-left: 84px;
+    width: 740px;
+}
+.coinContainer{
+    margin-top: 50px;
+    margin-left: 155px;
+}
+.cardContainer{
+    margin-left: 220px;
+    width: 300px;
+}
+.chartHeader{
+    margin-left: 302px;
+}
+ #myChart{
+    width: 280px;
+    margin-left: 0px;
+    display: block;
+    /* margin-top: 50px; */
+    height: 500px;
+}
+.container{
+    margin-left: 27rem;
+}
+canvas{
+    width: 400px;
+    height: 500px;
+}
+}

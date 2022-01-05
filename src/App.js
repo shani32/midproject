@@ -17,6 +17,7 @@ import { UserContextProvider } from './components/UserContext';
 import ArticlesPage from './pages/coinDetailsPage/articles/articlesPage';
 import WishList from './components/wishList';
 import Snow from './components/Snow';
+import './mobile.css'
 
 function App() {
   const [user, setUser]=React.useState('')
