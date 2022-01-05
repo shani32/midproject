@@ -1,7 +1,7 @@
 body{
-    background-color: rgb(94, 149, 212);
-    /* height: 100%; */
-    /* background-image: url('https://img.freepik.com/free-photo/cryptocurrency-coding-digital-blue-background-open-source-blockchain-concept_53876-124644.jpg?size=626&ext=jpg&ga=GA1.2.1544948641.1640304000'); */
+    /* background-color: rgb(94, 149, 212); */
+    background-color: gold;
+   
 }
 .coinApp{
     display: flex;
@@ -11,12 +11,12 @@ body{
 }
 .background{
     height:94.5%;
-    width: 150px;
+    width: 130px;
     background-color: black;
     position: absolute;
     bottom: 0px;
     right: 0;
-    border-left: burlywood 2px solid;
+    /* border-left: burlywood 2px solid; */
 
 }
 /* .mainPageContainer{
@@ -106,10 +106,16 @@ a:active{
 .coin-search{
     text-align: left;
     width: 250px;
-   
+   position: absolute;
+    left:100px;
+    text-align: center;
 }
 .coin-search input{
-    height: 45px;
+    height: 40px;
+    width: 220px;
+    /* margin-right: 130px; */
+    
+    
 }
 
 .wishListAdd{

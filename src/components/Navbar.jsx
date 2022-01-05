@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import LoginButton from "./LoginButton";
 import { googleSign, googleOut } from '../api/auth';
 import { useUserContext } from "./UserContext";
-import { getCounter } from "../api/crud";
+
 
 const Navbar=()=>{
     const {user, setUser}=useUserContext();
@@ -16,7 +16,7 @@ const Navbar=()=>{
         <Link to = {'/'}> <div className="homepage">Homepage</div></Link>
         <Link to = {'/news'}> <div className="wishList">News</div></Link>
        {!user.displayName?<Link to={'/'}> <div onClick={()=>googleSign(setUser)} className="loginUser">Login</div></Link>:<>
-        <Link to={'/wishList'}> <div onClick={()=>console.log('ds')} className="loginUser">WishLISt</div></Link>
+        <Link to={'/wishList'}> <div onClick={()=>console.log('added')} className="loginUser">WishLISt</div></Link>
        <Link to={'/'}> <div onClick={()=>googleOut(setUser)} className="loginUser">LogOut</div></Link></>}
     </div>
  

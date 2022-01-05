@@ -31,17 +31,17 @@ if(!data)return <>Loading ..... </>
                 
                 <div>price change:{item.priceChange}</div> */}
                 {/* <img className="imageWishList" src={item.image} alt="coinWishList" /> */}
-                <div class="ui card">
+                <div class="ui card cardContainer">
                     <a class="image" href="#">
                         <img src={item.image}/></a>
-                    <div class="content">
+                    <div class="content contentCard">
                         <a class="header" href="#">name: {item.name} <br /> price: {item.price}$</a>
                         <div class="meta">
                             <a>price change:{item.priceChange}%</a>
                         </div>
                     </div>
                 </div>
-                    <button className="deleteButton" onClick={()=>removeFromWishList(item.id,user.uid)}  >X</button>
+                    <button className="deleteButton" onClick={()=>removeFromWishList(item.id,user.uid)} >Delete Coin</button>
                 </div>
                 
                 </>

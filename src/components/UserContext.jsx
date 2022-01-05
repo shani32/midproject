@@ -7,7 +7,6 @@ export function useUserContext(){
     
 }
 export const UserContextProvider=props=>{
-    // const [wishList, setWishList]= useState(['bitcoin', 'ethereum', 'bnb'])
     const [user, setUser]= useState('hello user')
     const [counter, setCounter]= useState(0)
     

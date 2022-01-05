@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import HistoryChart from "../../components/chart";
 import axios from "axios";
 import CoinInfo from "../../components/CoinInfo";
+import Spinner from "../../components/spinner";
 
 
 const CoinDetailPage = () => {
@@ -65,7 +66,7 @@ const CoinDetailPage = () => {
 
   const renderData = () => {
     if (isLoading) {
-      return <div>Loading....</div>;
+      return <div><Spinner/></div>;
     }
      console.log(`coin: `,coinData)
     return (

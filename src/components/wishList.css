@@ -1,17 +1,27 @@
 .coinWishList{
     width: 200px;
-    height: 400px;
-    /* padding-left: 10px; */
-    /* display: flex; */
-
+    height: 200px;
+    
+margin: 16px;
     
 }
 .deleteButton{
     width: 200px;
     height: 50px;
+    border-radius: 10px;
+    background-color: black;
+    color: gold;
 }
 .wishListContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
+}
+.contentCard{
+    /* height: 100px; */
+    text-align: center;
+}
+.cardContainer{
+height: 280px;
 }

@@ -32,11 +32,12 @@ if (articles.length <= 0) {
     // articles.map((news, index) => {console.log(index,news.image.thumbnail?1:0)})
     return articles.map((news, index) => (
       <div className="cardContainer" key={index}>
-      <div className="ui card" >
-        <div className="image">
-          <img className="bigImage" style={{ maxWidth: "300px", maxHeight: '300px' }} src={news.image?news.image.thumbnail.contentUrl:imageUrl} alt="icon" />
-        </div>
-        <div className="content">
+      <div className="ui card articleCard" >
+        <div className="image articleImage">
+          <img className="bigImage" style={{ maxWidth: "300px", maxHeight: '200px' }} src={news.image?news.image.thumbnail.contentUrl:imageUrl} alt="icon" />
+        </div >
+        <div className="textContent">
+        <div className="content ">
           <a className="header"></a>
           <div className="meta">
             <span className="date">
@@ -49,9 +50,10 @@ if (articles.length <= 0) {
         </div>
         <div className="extra content">
           <a href={news.url} target="_blank">
-            <img className="icon" style={{ maxWidth: "20px" }} src={news.provider[0].image?news.provider[0].image.thumbnail.contentUrl:'Please Enter TO article'}  />
+            <img className="icon" style={{ maxWidth: "20px"}} src={news.provider[0].image?news.provider[0].image.thumbnail.contentUrl:'Please Enter TO article'}  />
           </a>
           {news.provider[0].name}
+        </div>
         </div>
       </div>
       </div>
