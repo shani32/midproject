@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { WishListContext } from "../../../components/UserContext";
 import './articles.css'
+import Spinner from "../../../components/spinner";
 
 function ArticlesPage() {
   const imageUrl='https://img.etimg.com/thumb/msid-87012632,width-210,imgsize-271482,,resizemode-4,quality-100/top-cryptocurrency-prices-today-polkadot-bitcoin-ethereum-zoom-up-to-18.jpg'
@@ -25,7 +26,7 @@ function ArticlesPage() {
 
 
 if (articles.length <= 0) {
-  return <h1>loading</h1>
+  return <h1><Spinner/></h1>
 }
   const ShowArticle = () => {
     // articles.map((news, index) => {console.log(index,news.image.thumbnail?1:0)})
@@ -42,7 +43,7 @@ if (articles.length <= 0) {
               {new Date(news.datePublished).toDateString()}
             </span>
           </div>
-          <div className="description">
+          <div className="description ShowArticle-description">
             {news.description}
           </div>
         </div>

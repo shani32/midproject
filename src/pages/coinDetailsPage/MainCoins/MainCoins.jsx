@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import axios from 'axios'
 import '../../../components/style.css';
 import Coin from '../../../components/coin';
+import Spinner from '../../../components/spinner';
 
 
 
@@ -64,7 +65,7 @@ function MainCoins() {
         </form>
       </div>
       <div>
-        {isLoading? <div className='coinsData'>please wait</div>: showData()}
+        {isLoading? <div className='coinsData'><Spinner/></div>: showData()}
    </div>
     </div>
   );

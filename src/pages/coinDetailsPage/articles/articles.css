@@ -1,7 +1,7 @@
 .cardContainer {
 width: 350px;
 height: 460px;
-margin: 30px;
+margin: 48px 30px;
 display: flex;
 
 }
@@ -18,7 +18,7 @@ display: flex;
 border-radius: 10px;
 display: flex;
 border: rgb(27, 117, 190) 5px solid;
-height: 500px;
+height: 530px;
 }
 
 /* img{
@@ -31,4 +31,9 @@ margin-bottom: 20px;
  img .bigImage{
     width: 320px;
     height: 300px;
+}
+
+.ShowArticle-description {
+    text-align: left;
+    /* font-size: 18px; */
 }
