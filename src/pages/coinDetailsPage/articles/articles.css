@@ -1,6 +1,6 @@
 .cardContainer {
-width: 230px;
-height: 450px;
+width: 15rem;
+height: 29rem;
 
 }
 
@@ -8,8 +8,8 @@ height: 450px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    margin-top: 50px;
+    justify-content: space-evenly;
+    margin-top: 3rem;
    
 }
 .ui{
@@ -18,6 +18,6 @@ display: flex;
 border: rgb(27, 117, 190) 5px solid;
 }
 img{
-    width: 200px;
-    height: 50px;
+    width: 13rem;
+    height: 3rem;
 }
