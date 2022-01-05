@@ -67,6 +67,7 @@ function MainCoins() {
       <div>
         {isLoading? <div className='coinsData'><Spinner/></div>: showData()}
    </div>
+   <div className='coinsImage'></div>
     </div>
   );
 }

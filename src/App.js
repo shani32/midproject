@@ -16,6 +16,7 @@ import Navbar from './components/Navbar';
 import { UserContextProvider } from './components/UserContext';
 import ArticlesPage from './pages/coinDetailsPage/articles/articlesPage';
 import WishList from './components/wishList';
+import Snow from './components/Snow';
 
 function App() {
   const [user, setUser]=React.useState('')
@@ -27,6 +28,7 @@ function App() {
           <UserContextProvider>
           <BrowserRouter>
             <Navbar/>
+            <Snow/>
             <div className="container">  
             
                     <Route path="/" exact component={MainCoins}/>
