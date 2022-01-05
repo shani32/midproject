@@ -1,8 +1,10 @@
 .coinWishList{
     width: 200px;
     height: 400px;
+    /* padding-left: 10px; */
     /* display: flex; */
-   
+
+    
 }
 .deleteButton{
     width: 200px;
