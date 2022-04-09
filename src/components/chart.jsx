@@ -66,11 +66,7 @@ const HistoryChart = ({ data }) => {
         <div className="chartHeader">
           <p className="currentPrice">Current Price: ${detail.current_price.toFixed(0)}</p>
           <p
-            // className={
-            //   detail.price_change_24h < 0
-            //     // ? "text-danger my-0"
-            //     // : "text-success my-0"
-            // }
+           
           >
            price change percentage 24h: {detail.price_change_percentage_24h.toFixed(2)}%
           </p>
@@ -87,24 +83,7 @@ const HistoryChart = ({ data }) => {
       </div>
 
       <div>
-        {/* <button
-          onClick={() => setTimeFormat("24h")}
-         
-        >
-          24h
-        </button>
-        <button
-          onClick={() => setTimeFormat("7d")}
-         
-        >
-          7d
-        </button> */}
-        {/* <button
-          onClick={() => setTimeFormat("1y")}
-         
-        >
-          1y
-        </button> */}
+      
       </div>
     </div>
   );

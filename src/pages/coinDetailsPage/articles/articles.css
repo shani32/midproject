@@ -1,9 +1,11 @@
 .cardContainer {
 width: 350px;
-height: 400px;
+height: auto;
 margin: 48px 30px;
 display: flex;
+
 padding: 10px;
+border-radius: 12px;
 
 
 }
@@ -21,6 +23,7 @@ padding: 10px;
 .articleCard{
 border-radius: 10px;
 display: flex;
+flex-wrap: nowrap;
 
 border: rgb(27, 117, 190) 5px solid;
 height: 380px;
@@ -37,10 +40,12 @@ img{
  img .bigImage{
     width: 320px;
     height: 300px;
-   
+   border-top: 2px solid white;
 }
 .icon{
     text-align: center;
+    text-decoration: none;
+    border: none;
 }
 
 .ShowArticle-description {
@@ -54,6 +59,8 @@ img{
     padding: 2px;
     height:210px;
     margin-bottom: 5px;
+    text-align: center;
+    border: none;
 
 
 }

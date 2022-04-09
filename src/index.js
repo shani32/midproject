@@ -10,9 +10,6 @@ console.log(window.location.origin)
 ReactDOM.render(
  <React.StrictMode>
 
-  {/* domain={domain}
-  clientId={clientId}
-  redirectUri={window.location.origin} */}
     <App />
   </React.StrictMode> ,
   

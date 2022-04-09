@@ -10,8 +10,7 @@ function MainCoins() {
   const [coins, setCoins]=useState([])
   const [inputSearch, setInputSearch]=useState('')
   const [isLoading, setIsLoading]=useState(false)
-  // const {wishList}= useContext(WishListContext)
-  // console.log(wishList)
+  
   
   useEffect(()=>{
     const getData = async () => {

@@ -14,7 +14,7 @@ const CoinDetailPage = () => {
   const formatData = (data) => {
     return data.map((el) => {
       return {
-        // t: Math.floor((el[0]/ (1000 * 60 * 60)) % 24)+":",
+   
         t: new Date(el[0]).toISOString().slice(11,16),
         y: el[1].toFixed(2),
       };

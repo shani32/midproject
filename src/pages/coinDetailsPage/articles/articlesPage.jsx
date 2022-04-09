@@ -7,7 +7,7 @@ function ArticlesPage() {
   const imageUrl='https://img.etimg.com/thumb/msid-87012632,width-210,imgsize-271482,,resizemode-4,quality-100/top-cryptocurrency-prices-today-polkadot-bitcoin-ethereum-zoom-up-to-18.jpg'
   const [articles, setArticles] = useState([]);
   const axios = require("axios").default;
-  const url = "https://bing-news-search1.p.rapidapi.com/news/search?q=Cryptocurrency&safeSearch=off&textFormat=Raw&freshness=Day&count=12"
+  const url = "https://bing-news-search1.p.rapidapi.com/news/search?q=Cryptocurrency&safeSearch=off&textFormat=Raw&freshness=Day&count=16"
   useEffect(() => {
     const article = async () => {
       const { data } = await axios.get(url, {
@@ -51,8 +51,9 @@ if (articles.length <= 0) {
         <div className="extra content">
           <a href={news.url} target="_blank">
             <img className="icon" style={{ maxWidth: "20px"}} src={news.provider[0].image?news.provider[0].image.thumbnail.contentUrl:'Please Enter TO article'}  />
-          </a>
           {news.provider[0].name}
+          </a>
+          
         </div>
         </div>
       </div>

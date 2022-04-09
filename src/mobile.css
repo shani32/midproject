@@ -20,32 +20,50 @@
 }
 .coin{
     font-size: 14px;
-    margin-left: 50px;
+    margin-left: 38px;
+    padding: 0;
 }
 .coin h1{
     font-size: 18px;
 }
 .coinRow{
     display: block;
-    width:500px
+    width:380px;
+    margin-right: 100px;
+}
+.coin img{
+    width: 40px;
+    height: 40px;
 }
 .body{
     padding: 13rem;
 }
-.navBarContainer{
+/* .navBarContainer{
     margin-left: 84px;
     width: 740px;
+} */
+.navBarContainer{
+    /* display: block; */
+    height: 60px;
+    text-align: center;
+    width: 700px;
+    padding-right: 350px;
+
 }
 .coinContainer{
     margin-top: 50px;
-    margin-left: 155px;
+    margin-left: 90px;
 }
 .cardContainer{
-    margin-left: 220px;
+    margin-left: 140px;
     width: 300px;
 }
 .chartHeader{
-    margin-left: 302px;
+    /* text-align: left; */
+    /* width: 100%; */
+    margin-right: 150px;
+
+    
 }
  #myChart{
     width: 280px;
@@ -54,11 +72,21 @@
     /* margin-top: 50px; */
     height: 500px;
 }
-.container{
+/* .container{
     margin-left: 27rem;
-}
+} */
 canvas{
     width: 400px;
     height: 500px;
+}
+.bg-white{
+    display: block;
+    text-align: center;
+}
+.wishListAdd {
+    width: 75px;
+    height: 60px;
+    font-size: 12px;
+   
 }
 }

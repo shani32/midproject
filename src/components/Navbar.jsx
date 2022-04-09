@@ -12,7 +12,7 @@ const Navbar=()=>{
 
     return(
     <div className="navBarContainer">
-        <div className="logo">{user.displayName? user.displayName: "hello"}</div>
+        <div className="logo">{user.displayName? user.displayName: "Hello"}</div>
         <Link to = {'/'}> <div className="homepage">Homepage</div></Link>
         <Link to = {'/news'}> <div className="wishList">News</div></Link>
        {!user.displayName?<Link to={'/'}> <div onClick={()=>googleSign(setUser)} className="loginUser">Login</div></Link>:<>

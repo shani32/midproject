@@ -22,7 +22,6 @@ import './mobile.css'
 function App() {
   const [user, setUser]=React.useState('')
   console.log(user)
-  // render() {
     return (
       <>
         <main>
@@ -42,7 +41,7 @@ function App() {
           </BrowserRouter>  
           </UserContextProvider>
         </main>
-        </>
+      </>
     )
 }
 
